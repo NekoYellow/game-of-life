@@ -39,7 +39,7 @@ Image *readData(char *filename)
 		return NULL;
 	}
 	uint32_t n, m;
-	fscanf(fp, "%u %u", &n, &m);
+	fscanf(fp, "%u %u", &m, &n);
 	uint8_t cmax;
 	fscanf(fp, "%hhu", &cmax);
 	if (cmax != 255) {
